@@ -1,0 +1,82 @@
+.container h1{
+    color: black;
+    font-weight: 500;
+}
+.container .list{
+    width:1100px;
+    margin:50px auto 0;
+    
+}
+.container .list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 100px;
+    position: relative;
+
+}
+.container .list .item .img img{
+    height:200px;
+    transition: 0.5s;
+}
+.container .list .item .img{
+    background-image: linear-gradient(to top right,
+        rgb(63, 63, 137), #ff685f
+    );
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.container .list .item .content{
+    background-color: #ffffff24;
+    border-radius: 30px;
+    padding:50px 30px;
+    transform: translate(0,-50px);
+    backdrop-filter: blur(20px);
+    color: black;
+    background-color: rgb(244, 169, 169);
+}
+.container .list .item .content .title{
+    font-size: x-large;
+}
+.container .list .item .content .des{
+    opacity: .7;
+    margin:10px 0;
+}
+
+.container .list .item .content .price{
+    font-size: large;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+.container .list .item .content .add{
+    background-color: #ff685f;
+    padding:20px;
+    color:#fff;
+    width:100%;
+    border:none;
+    border-radius: 30px;
+}
+.container .list .item:hover img{
+    transform: translate(0,-50px);
+}
+
+.listPage{
+    padding:10px;
+    text-align: center;
+    list-style: none;
+}
+
+.listPage li{
+    background-color: #ffffffBD;
+    padding:20px;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+}
+
+.container .listPage .active{
+    background-color: #ff685f;
+    color:#fff;
+}
